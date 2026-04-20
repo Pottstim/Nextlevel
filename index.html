@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Level Window Cleaning | Sanford, NC</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="font-sans text-slate-800 bg-[#fbfaf9] min-h-screen">
+
+    <!-- Friendly Top Bar -->
+    <div class="bg-blue-600 text-blue-50 text-sm py-2 px-4 hidden md:block">
+        <div class="max-w-6xl mx-auto flex justify-between items-center font-medium">
+            <div class="flex items-center space-x-2">
+                <span class="bg-blue-500 text-white px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wide">Local</span>
+                <span>Proudly Serving the Sandhills, Sanford and Surrounding Areas</span>
+            </div>
+            <div class="flex items-center space-x-6">
+                <a href="mailto:hello@nextlevelwindowsnc.com" class="flex items-center hover:text-blue-200 transition">
+                    <i data-lucide="mail" class="w-4 h-4 mr-2"></i> hello@nextlevelwindowsnc.com
+                </a>
+                <span class="flex items-center">
+                    <i data-lucide="coffee" class="w-4 h-4 mr-2"></i> Open Mon-Sat, 8am - 6pm
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <header id="main-header" class="sticky top-0 z-50 transition-all duration-200 bg-[#fbfaf9] py-5 md:py-6">
+        <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+            
+            <!-- Logo Section -->
+            <a href="#home" class="flex items-center cursor-pointer decoration-transparent">
+                <div class="flex flex-col">
+                    <span class="text-2xl md:text-3xl font-black text-slate-800 tracking-tight leading-none uppercase">
+                        Next Level
+                    </span>
+                    <span class="text-sm font-bold text-blue-600 tracking-widest uppercase mt-1">
+                        Window Cleaning
+                    </span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-8 font-semibold text-slate-600">
+                <a href="#services" class="hover:text-blue-600 transition decoration-2 underline-offset-4 hover:underline">What We Do</a>
+                <a href="#about" class="hover:text-blue-600 transition decoration-2 underline-offset-4 hover:underline">Our Story</a>
+                <a href="#contact" class="hover:text-blue-600 transition decoration-2 underline-offset-4 hover:underline">Get an Estimate</a>
+                <a href="tel:3234851020" class="flex items-center bg-slate-900 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition-colors shadow-md">
+                    <i data-lucide="phone" class="w-4 h-4 mr-2"></i>
+                    <span>(323) 485-1020</span>
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-btn" class="md:hidden p-2 text-slate-800 bg-white rounded-full shadow-sm">
+                <i data-lucide="menu" id="menu-icon" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white shadow-xl py-4 px-4 flex-col space-y-2 z-50 border-t">
+            <a href="#services" class="text-left text-lg font-semibold text-slate-700 py-3 px-4 hover:bg-slate-50 rounded-xl mobile-link">What We Do</a>
+            <a href="#about" class="text-left text-lg font-semibold text-slate-700 py-3 px-4 hover:bg-slate-50 rounded-xl mobile-link">Our Story</a>
+            <a href="#contact" class="text-left text-lg font-semibold text-slate-700 py-3 px-4 hover:bg-slate-50 rounded-xl mobile-link">Get an Estimate</a>
+            <a href="tel:3234851020" class="flex justify-center items-center bg-blue-600 text-white px-4 py-4 rounded-xl font-bold mt-2 shadow-md">
+                <i data-lucide="phone" class="w-5 h-5 mr-2"></i> Call (323) 485-1020
+            </a>
+        </div>
+    </header>
+
+    <!-- Friendly Hero Section -->
+    <section id="home" class="pt-10 pb-20 md:pt-16 md:pb-32 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12">
+            
+            <div class="lg:w-1/2 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-800 font-medium text-sm">
+                    <i data-lucide="smile" class="w-4 h-4 mr-2"></i> Friendly, local, and fully insured.
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.1]">
+                    Making Sandhills Homes <span class="text-blue-600 relative inline-block">
+                        Sparkle.
+                        <svg class="absolute w-full h-3 -bottom-1 left-0 text-blue-200" viewBox="0 0 100 10" preserveAspectRatio="none">
+                            <path d="M0 5 Q 50 10 100 5" stroke="currentColor" stroke-width="3" fill="transparent" />
+                        </svg>
+                    </span>
+                </h1>
+                <p class="text-lg md:text-xl text-slate-600 leading-relaxed max-w-lg mx-auto lg:mx-0">
+                    Hi, we're Next Level! We're your local neighbors dedicated to washing away the NC pollen, dirt, and grime. Honest pricing, hard work, and a smile on every job.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                    <a href="#contact" class="w-full sm:w-auto bg-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-700 transition shadow-lg shadow-blue-600/30 text-center">
+                        Get a Free Estimate
+                    </a>
+                    <span class="text-slate-500 font-medium">or</span>
+                    <a href="tel:3234851020" class="w-full sm:w-auto bg-white border-2 border-slate-200 text-slate-800 px-8 py-4 rounded-full font-bold text-lg hover:border-blue-600 hover:text-blue-600 transition text-center">
+                        Call (323) 485-1020
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:w-1/2 w-full relative">
+                <!-- Friendly Image Placeholder -->
+                <div class="bg-slate-200 aspect-square md:aspect-[4/3] rounded-[2rem] overflow-hidden shadow-2xl relative flex flex-col items-center justify-center text-slate-500 border-8 border-white transform rotate-2 hover:rotate-0 transition duration-500">
+                    <span class="block mb-4 p-4 bg-white rounded-full shadow-sm"><i data-lucide="home" class="w-12 h-12 text-blue-400"></i></span>
+                    <p class="text-lg font-bold text-slate-700 px-8 text-center">[ Place a photo of you, your team, or your work truck here! ]</p>
+                    <p class="text-sm mt-2 max-w-xs text-center px-4">People buy from people. A photo of the owner smiling works wonders here.</p>
+                </div>
+                
+                <!-- Floating review card -->
+                <div class="absolute -bottom-6 -left-6 md:-left-12 bg-white p-4 rounded-2xl shadow-xl border border-slate-100 max-w-[250px] transform -rotate-3">
+                    <div class="flex text-yellow-400 mb-2">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <p class="text-sm font-medium text-slate-700 italic">"They showed up on time, were super polite, and my windows look invisible!"</p>
+                    <p class="text-xs text-slate-500 mt-2 font-bold">- Sarah, Sanford NC</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- NC Specific Section -->
+    <section class="bg-white py-16 border-y border-slate-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="bg-blue-50 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 relative overflow-hidden">
+                <div class="md:w-2/3 z-10">
+                    <h2 class="text-2xl md:text-3xl font-bold text-slate-800 mb-4">
+                        We Know North Carolina Weather.
+                    </h2>
+                    <p class="text-lg text-slate-600 mb-6">
+                        Between the heavy spring pine pollen, humid summers that cause green mildew on siding, and fall leaves clogging up gutters—NC homes take a beating. We use the right techniques (like soft-washing) to safely protect your home while getting it completely clean.
+                    </p>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <li class="flex items-center text-slate-700 font-medium"><i data-lucide="check" class="w-5 h-5 text-blue-500 mr-2"></i> Bye-bye Yellow Pollen</li>
+                        <li class="flex items-center text-slate-700 font-medium"><i data-lucide="check" class="w-5 h-5 text-blue-500 mr-2"></i> Safe Green Mold Removal</li>
+                        <li class="flex items-center text-slate-700 font-medium"><i data-lucide="check" class="w-5 h-5 text-blue-500 mr-2"></i> Clear, Flowing Gutters</li>
+                        <li class="flex items-center text-slate-700 font-medium"><i data-lucide="check" class="w-5 h-5 text-blue-500 mr-2"></i> Spotless Glass</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/3 z-10 flex justify-center">
+                   <div class="w-32 h-32 bg-white rounded-full flex items-center justify-center shadow-lg">
+                       <i data-lucide="leaf" class="w-16 h-16 text-green-500"></i>
+                   </div>
+                </div>
+                <div class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-blue-100 rounded-full opacity-50 blur-3xl"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16 max-w-2xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">How we can help around the house</h2>
+                <p class="text-lg text-slate-600">
+                    Whether you're getting ready for the holidays, doing spring cleaning, or just want to be proud pulling into your driveway, we've got you covered.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 hover:shadow-xl transition duration-300 group">
+                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition duration-300">
+                        <i data-lucide="sparkles" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-800 mb-3">Window Cleaning</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6">
+                        Inside and out. We scrub the glass, wipe down the sills, and clean the screens. We leave behind nothing but streak-free, crystal-clear views so you can actually enjoy looking out your windows again.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 hover:shadow-xl transition duration-300 group">
+                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition duration-300">
+                        <i data-lucide="droplets" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-800 mb-3">Pressure Washing</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6">
+                        Driveways, patios, siding, and walkways. We safely blast away years of built-up grime, slippery algae, and dirt. It's the fastest way to make your whole property look brand new.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 hover:shadow-xl transition duration-300 group">
+                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition duration-300">
+                        <i data-lucide="home" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-800 mb-3">Gutter Cleaning</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6">
+                        Don't risk climbing up on that shaky ladder. We'll scoop out all the gunk, leaves, and pine needles to make sure water flows exactly where it's supposed to, protecting your roof and foundation.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 hover:shadow-xl transition duration-300 group">
+                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition duration-300">
+                        <i data-lucide="sun" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-800 mb-3">Christmas Lights</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6">
+                        Take the stress out of the holidays. We handle the custom design, safe installation, maintenance during the season, and we even take them down and pack them up for you in January.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-16">
+            <div class="md:w-1/2">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    More than just a cleaning company. We're part of the community.
+                </h2>
+                <div class="space-y-4 text-slate-300 text-lg">
+                    <p>
+                        When you hire Next Level Window Cleaning, you aren't dealing with a confusing 1-800 number or a huge corporate franchise. 
+                    </p>
+                    <p>
+                        You're hiring locals who care about doing a great job for our neighbors. We believe in showing up exactly when we say we will, treating your property with absolute respect, and making sure you are 100% thrilled with the results before we leave.
+                    </p>
+                    <p class="font-semibold text-white pt-4">
+                        If you ever have an issue, you have our direct number. We'll make it right.
+                    </p>
+                </div>
+            </div>
+            <div class="md:w-1/2 w-full">
+                <!-- Friendly Placeholder -->
+                <div class="bg-slate-800 aspect-video rounded-3xl flex flex-col items-center justify-center border border-slate-700 p-8 text-center shadow-2xl">
+                    <i data-lucide="smile" class="w-12 h-12 text-slate-500 mb-4"></i>
+                    <p class="text-slate-400 font-medium">[ Great spot for a candid photo of you working on a house, or a picture of your family/team ]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-blue-50/50">
+        <div class="max-w-4xl mx-auto px-4">
+            
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">Let's chat about your home</h2>
+                <p class="text-lg text-slate-600">
+                    Reach out however you prefer. Call, text, or use the form below. We usually reply within a couple of hours!
+                </p>
+            </div>
+
+            <div class="bg-white rounded-[2rem] shadow-xl overflow-hidden border border-slate-100">
+                <div class="flex flex-col md:flex-row">
+                    
+                    <!-- Direct Contact Info Area -->
+                    <div class="bg-blue-600 p-10 text-white md:w-2/5 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-6">Contact Info</h3>
+                            <div class="space-y-8">
+                                <div class="flex items-start">
+                                    <i data-lucide="phone" class="w-6 h-6 mr-4 text-blue-200 shrink-0"></i>
+                                    <div>
+                                        <p class="font-bold text-lg"><a href="tel:3234851020" class="hover:text-white transition">(323) 485-1020</a></p>
+                                        <p class="text-blue-200 text-sm mt-1">Feel free to call or text this number directly.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i data-lucide="mail" class="w-6 h-6 mr-4 text-blue-200 shrink-0"></i>
+                                    <div>
+                                        <p class="font-bold text-lg"><a href="mailto:hello@nextlevelwindowsnc.com" class="hover:text-white transition break-all">hello@nextlevelwindowsnc.com</a></p>
+                                        <p class="text-blue-200 text-sm mt-1">Drop us an email anytime.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i data-lucide="map-pin" class="w-6 h-6 mr-4 text-blue-200 shrink-0"></i>
+                                    <div>
+                                        <p class="font-bold text-lg">Based in Sanford, NC</p>
+                                        <p class="text-blue-200 text-sm mt-1">Serving the Sandhills and all surrounding areas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-12 pt-8 border-t border-blue-500/50">
+                            <p class="text-sm text-blue-100 italic">"We provide fast, free estimates with zero pressure or obligation."</p>
+                        </div>
+                    </div>
+
+                    <!-- Friendly Form -->
+                    <div class="p-10 md:w-3/5">
+                        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-6">
+                            
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-2">Your Name</label>
+                                <input type="text" name="name" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition" placeholder="e.g. John Doe" required />
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-2">Phone Number</label>
+                                <input type="tel" name="phone" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition" placeholder="What's the best number to reach you?" required />
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-2">What do you need help with?</label>
+                                <select name="service" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition text-slate-700">
+                                    <option>Just Windows</option>
+                                    <option>Just Pressure Washing</option>
+                                    <option>Gutters</option>
+                                    <option>Christmas Lights</option>
+                                    <option>A little bit of everything!</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-2">Any details? (Optional)</label>
+                                <textarea name="message" rows="3" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition" placeholder="e.g. It's a 2-story house, driveways are pretty dirty..."></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-slate-900 text-white font-bold py-4 rounded-xl hover:bg-blue-600 transition duration-300 flex justify-center items-center">
+                                <i data-lucide="message-square" class="w-5 h-5 mr-2"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-50 py-12 border-t border-slate-200 text-slate-600 text-center md:text-left">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            
+            <div class="flex flex-col items-center md:items-start">
+                <span class="text-xl font-black text-slate-800 uppercase tracking-tight mb-2">
+                    Next Level
+                </span>
+                <p class="text-sm max-w-xs">Local, professional exterior cleaning for the Sandhills region and beyond.</p>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <a href="tel:3234851020" class="text-lg font-bold text-slate-800 hover:text-blue-600 transition flex items-center mb-2">
+                    <i data-lucide="phone" class="w-4 h-4 mr-2"></i> (323) 485-1020
+                </a>
+                <a href="mailto:hello@nextlevelwindowsnc.com" class="text-sm font-bold text-slate-600 hover:text-blue-600 transition flex items-center mb-4">
+                    <i data-lucide="mail" class="w-4 h-4 mr-2"></i> hello@nextlevelwindowsnc.com
+                </a>
+                <p class="text-sm">Based in Sanford, Serving the Sandhills</p>
+            </div>
+
+            <div class="flex flex-col items-center md:items-end text-sm">
+                <p class="mb-2">Fully Licensed & Insured</p>
+                <p>&copy; <span id="year"></span> Next Level Window Cleaning.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // 1. Initialize Icons
+        lucide.createIcons();
+
+        // 2. Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // 3. Mobile Menu Toggle Logic
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+            
+            // Swap icon between Menu and X
+            if(mobileMenu.classList.contains('hidden')) {
+                menuIcon.setAttribute('data-lucide', 'menu');
+            } else {
+                menuIcon.setAttribute('data-lucide', 'x');
+            }
+            lucide.createIcons();
+        });
+
+        // 4. Close mobile menu when a link is clicked
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+                menuIcon.setAttribute('data-lucide', 'menu');
+                lucide.createIcons();
+            });
+        });
+
+        // 5. Header scroll effect
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                header.classList.add('bg-white', 'shadow-md', 'py-3');
+                header.classList.remove('bg-[#fbfaf9]', 'py-5', 'md:py-6');
+            } else {
+                header.classList.remove('bg-white', 'shadow-md', 'py-3');
+                header.classList.add('bg-[#fbfaf9]', 'py-5', 'md:py-6');
+            }
+        });
+    </script>
+</body>
+</html>
